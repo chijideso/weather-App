@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weatherApp.com</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <h1>weatherApp</h1>
+      <div class="search">
+        <input class="input" type="text" placeholder="enter city name" spellcheck="false" />
+        <button class="btn">Search</button>
+      </div>
+      <div class="error">
+        <p>Invalid city or country Name</p>
+      </div>
+      <div class="weather">
+        <img class="img" src="./weather-icon-png-15.png" alt="" />
+        <h1 class="temp"></h1>
+        <h2 class="rain"></h2>
+        <h2 class="city"></h2>
+        <h2 class="cityerror">No such city found</h2>
+        <div class="details">
+          <div class="col">
+            <img src="./air-conditioner_318-717152.png" alt="" />
+            <div>
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+        </div>
+        <div class="col2">
+          <img src="./download-removebg-preview (1).png" alt="" />
+          <div>
+            <p class="wind"></p>
+            <p>windspeed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
