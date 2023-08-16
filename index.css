@@ -25,7 +25,7 @@
    height: 100%;
    width: 100%;
    display: flex;
-   max-width: 30px auto;
+   max-width: 100px auto;
    align-items: center;
    justify-content: space-between;
  }
@@ -51,7 +51,7 @@
     cursor: pointer;
     color: #18a08b;
     font-size: 16px;
-    margin: 16px auto;
+    margin-left: 16px;
    
    
 
@@ -79,8 +79,8 @@
    font-weight: 400;
    margin-top: 10px; 
  }
- .details ,.col{
-   display: flex;
+ .details .col{
+   /* display: flex; */
    align-items: center;
    justify-content: space-between;
    padding:  0 auto ;
@@ -90,8 +90,17 @@
    max-width: 80px;
 
  }
- .details .col2{
+ .details{
   display: flex;
+  width: 100%;
+  max-width: 50px auto;
+  /* justify-content: space-evenly; */
+  margin-left: 50px;
+  align-items: center;
+
+ }
+ .details .col2{
+  /* display: flex; */
    align-items: center;
    justify-content: space-between;
    padding:  0 auto ;
@@ -107,13 +116,13 @@
    max-width: 30px auto;
    
  }
- .col img{
+ /* .details .col{
    display: flex;
    align-items: center;
    text-align: left;
    /* padding-right: 60px; */
    
- }
+ /* } */ 
  .humidity{
    font-size: 19px;
    margin-top: -6px;
@@ -144,8 +153,8 @@
 @media screen and (max-width: 768px) {
   .input, .btn{
      /* padding-left: -50px;  */
-     width: 90%;
-     max-width: 50px auto;
+     width: 100%;
+     max-width: 100px auto;
      
     }
     .weather h1{
@@ -163,13 +172,24 @@
   
   @media screen and (max-width: 480px) {
     .input, .btn{
-      width: 50%;
+      width: 90%;
       max-width: 5px auto;
     }
     .details, .col, .col2{
       width: 30%;
-      max-width: 5px auto;
+      max-width: 50px auto;
+    }
+    .input{
+      flex: 1;
+
     }
    
- 
+ .details{
+  width: 30%;
+ margin-left: 10px;
+ }
+ .details .humidity p{
+  width: 30%;
+  font-size: large;
+ }
 }
